@@ -13,12 +13,16 @@ function Room() {
         <br />
         <br />
         <button onClick={() =>  islit(!isdark)}>Switch to {brightness} </button>
-        <br/>
-        Count:{clock}<br/>
+        <br/> Temp : {clock}<br/>
         <button onClick={() =>{console.log("Counter arrow function");
                                 moveclock(++clock);
                                 }}>
-                                Increase Count
+                                Increase Temp  
+        </button>
+        <button onClick={() =>{console.log("Counter arrow function");
+                                moveclock(--clock);
+                                }}>
+                                Decrease Temp
         </button>
       </div>
     );
